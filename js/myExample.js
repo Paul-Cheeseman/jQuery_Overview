@@ -90,10 +90,10 @@
 	/* Changing active elements inner html/text and changing it via onclick	*/
 	/************************************************************************/	
 	$(".buttonClass").click(function() {
-		if ($(this).text() == "Odd amount")
-    		$(this).text("Even amount");
+		if ($(this).text() == "Odd")
+    		$(this).text("Even");
     	else
-			$(this).text("Odd amount");
+			$(this).text("Odd");
 	});
 
 
