@@ -1,0 +1,293 @@
+
+	/***************************************/
+	/* Some hack up, never to be seen CSS! */
+	/***************************************/
+
+  		#jQuery-modal .modal-dialog {
+    		width: 700px;
+    		color: black;
+  		}
+
+  		#dom-modal .modal-dialog {
+    		width: 700px;
+    		height: 350px;
+    		color: black;
+  		}
+
+		#test{
+			margin-top: 20px;
+		}
+
+		button{
+			border-radius: 5px;
+			height: 50px;
+			margin: 10px;
+			padding: 10px;
+			width: 150px;
+
+		}
+
+		#text-box{
+			height: 100px;
+		}
+
+
+		button.small-button{
+			border-radius: 5px;
+			height: 30px;
+			margin: 5px;
+			padding: 5px;
+			width: 70px;
+
+		}
+
+		.display-dashboard-container{
+			border: 2px solid black;
+			padding: 10px;
+			margin: 5px;
+			display: inline-block;
+		    vertical-align: text-top;
+		    text-align: center;
+		}
+		
+		.event-panal{
+			box-sizing: border-box;
+			border: 2px solid black;
+			padding: 10px;
+			margin: 5px;
+			display: inline-block;
+		    vertical-align: text-top;
+		    width: 200px;
+		}
+
+
+		.events-dashboard-container{
+			border: 2px solid black;
+			padding: 10px;
+			margin: 5px;
+			display: inline-block;
+		    vertical-align: text-top;
+		    text-align: center;		
+		}
+
+
+		.dom-dashboard{
+			padding: 10px;
+			margin: 5px;
+		    text-align: center;	
+		    width: 660px;
+		}
+
+		#hideEvents{
+			height: 35px;
+			width: 80px;			
+			left: 525px;
+			top: 15px;
+
+		}
+
+		#hideDOMNav{
+			height: 35px;
+			width: 80px;			
+			left: 525px;
+			top: 55px;
+
+		}
+
+
+		.background-black{
+			background-color: rgb(0, 0, 0);
+		}
+
+		.background-grey{
+			background-color: rgb(204, 204, 204);
+		}
+
+
+
+
+		.domHighlight{
+			display: inline-block;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			padding: 3px;
+			margin-left: 5px;
+		}
+
+		.domHighlightWin{
+			display: inline-block;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			padding: 3px;
+			margin-left: 5px;	
+		}
+
+		.dom-container{
+			height: 325px;
+		}
+
+		#window-tag{
+			position: absolute;
+			top: 9em;
+			left: 20em;
+		}
+
+		#document-tag{
+			position: absolute;
+			left: 2em;
+			top: 2.75em;
+		}
+
+		#html-tag{
+			position: absolute;
+			left: 0.5em;
+			top: 2.75em;
+		}
+
+		#head-tag{
+			position: absolute;
+			left: -16.5em;
+			top: 3.25em;
+		}
+
+		#meta-tag{
+			position: absolute;
+			left: -6em;
+			top: 3em;
+		}
+		
+		#css-link1-tag{
+			position: absolute;
+			left: -0.6em;
+			top: 3em;
+		}
+
+		#css-link2-tag{
+			position: absolute;
+			left: 5.5em;
+			top: 3em;
+		}
+
+		#body-tag{
+			position: absolute;
+			left: 11.5em;
+			top: 3.25em;
+		}
+
+		#div1-tag{
+			position: absolute;
+			left: -11.5em;
+			top: 3em;
+		}
+
+		#div1_1-tag{
+			position: absolute;
+			left: -4em;
+			top: 3em;
+		}
+
+		#div1_1-h1-tag{
+			position: absolute;
+			left: -3em;
+			top: 3em;
+		}
+
+		#div1_1-p-tag{
+			position: absolute;
+			left: 3.5em;
+			top: 3em;
+		}
+
+
+		#div1-img-tag{
+			position: absolute;
+			left: 3em;
+			top: 3em;
+		}
+
+
+		#div2-tag{
+			position: absolute;
+			left: -0.25em;
+			top: 3em;
+		}
+
+		#div2-h1-tag{
+			position: absolute;
+			left: -3.5em;
+			top: 3em;
+		}
+
+		#div2-img-tag{
+			position: absolute;
+			left: 2.5em;
+			top: 3em;
+		}
+
+
+		#body-script-link-tag{
+			position: absolute;
+			left: 8em;
+			top: 3em;
+		}
+
+
+	
+	#activeElement{
+		background-color: red;
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		margin: 3px 3px 3px 3px;	
+		/* t r b l */
+	}
+
+	#childElement{
+		background-color: blue;
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		margin: 0px 3px 3px 0px;	
+	}
+
+	#parentElement{
+		background-color: green;
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		margin: 0px 3px 5px 3px;
+	}
+
+
+	#siblingElement{
+		background-color:orange;
+		color: white;
+		border-radius: 5px;
+		padding: 3px;
+		margin: 0px 3px 5px 0px;
+	}
+
+	.key{
+		margin: 0;
+		width: 60px;
+		font-size: 0.75em;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	#keyPanel{
+		position: relative;
+		left: 18em;
+		top: -24em;
+		border: 2px black solid;
+		display: inline-block;
+		padding: 5px;
+		border-radius: 5px;		
+	}
+
+	#domNavPanelCont{
+		border: 2px black solid;
+		background-color: white;
+	}
