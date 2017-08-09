@@ -34,10 +34,10 @@
                                 <li><a href="#changing-jQuery">Changing HTML/CSS with jQuery</a></li>
                                 <li><a href="#this-jQuery">jQuery and THIS</a></li>
                             </ul>
-                            <li><a class="interactive-elements" href="" data-toggle="modal" data-target="#jQuery-modal">jQuery Dashboard</a></li>
-                            <li><a href="#intro-dom">DOM Intro</a></li>
-                            <li><a class="interactive-elements" href="" data-toggle="modal" data-target="#dom-modal">Interactive DOM Hierarchy</a></li>
-                        </li>
+                         </li>
+                         <li><a class="interactive-elements" href="" data-toggle="modal" data-target="#jQuery-modal">jQuery Dashboard</a></li>
+                         <li><a href="#intro-dom">DOM Intro</a></li>
+                         <li><a class="interactive-elements" href="" data-toggle="modal" data-target="#dom-modal">Interactive DOM</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
         <strong>Please remember to refresh the page so that the dashboard is reset for futher testing/experimenting</strong>
     </div>
     <div id="changing-jQuery" class="container-fluid">
-        <h1>Changing HTML/CSS with jQuery Events</h1>
+        <h1>Changing HTML/CSS with jQuery</h1>
         <p>As shown in the previous section, jQuery can be used to change as well as select HTML/CSS, lets check this out, launch the jQuery dashboard and set up the layout as guided in the previous section, with the only difference being you need to have elements selected in dev tools rather than console. The console may already be showing at the bottom of the elements pane (although you may need to expand it up), if not press escape and it will appear and adjust it as necessary. In this instance we want to see the changes to the HTML, so we need to get the HTML which will change into view. So in the elements pane drill down into the HTML, by selecting these elements and expanding them, in this order: </p>
         <p><code>body, div id=jQuery-modal, div class="modal-dialog", div="modal-content", div="modal-body", div="display-dashboard-container", div id="display-dashboard"</code></p>
         <p>Then adjust your page so the h4 elements with an id of test-* are in view, ideally you page layout will look something like:</p>
@@ -109,7 +109,7 @@
                 <p>As you would have seen, the changes made to the HTML are inline which is not best practice, so you should add a class, this could be done via the console but we can create an event to do this, which leads nicely onto the next section.</p>
     </div>
     <div id="events-jQuery" class="container-fluid">
-        <h1>Changing HTML/CSS with jQuery</h1>
+        <h1>Changing HTML/CSS with jQuery Events</h1>
         <h4>EVENTS IN JQUERY</h4>
         <P>In essence events are user based actions, it could be a mouse click, a key being pressed or released, or something being hovered over by the cursor. There are a variety of different events and list of them can be found <a href="https://www.w3schools.com/js/js_events.asp">online</a>. When set up, event handlers listen out for these events and will trigger off some code when required, and this will normally result in something observable happening on the screen.</P>
         <p>This overview will use the click event and the mouseover event. From this point on you will only need the elements section of Google Dev Tools, so you can close the console section of the elements window if it is taking up space. To observe the changes you will need to drill down to the HTML div with an ID of display-dashboard, via the rote shown in the previous section.</p>
@@ -125,10 +125,11 @@
         <p>The code for addRemClassBlue is written using methos chaining, which enables a shorter syntax and is commonly used in jQuery:</p>
         <ul>
             <li><code>$("#addRemClassBlue").click(function(){</code></li>
-            <li><code>$(".test-class").addClass("text-blue").removeClass("text-red");</code></li>
-            <li><code>});</code>
-                <li>
-                </li>
+            <ul>
+                <li><code>$(".test-class").addClass("text-blue").removeClass("text-red");</code></li>
+            </ul>
+            <li><code>});</code><li>
+        </ul>
                 <h4>Changing HTML/CSS with jQuery Effects</h4>
                 <p>jQuery effects are a simple was of combining different CSS animation effects via one command, there are various, but this overview will only be using fade in/out and slide in/out via event handlers. To watch how the effects work, go to the dashboard in the elements section and drill down to the dashboard HTML (how to do this is explained in preceeding sections). Then press the top slide toggle button and watch the HTML change, press it again to see the effect in reverse and then try the fade toggle button.</p>
                 <p> From watching the HML you will have seen something happening very quickly! If you now use the slow version of the toggle buttons the CSS manipulation can be seen more clearly. Slide out hides the overflow of the container, then reduces the containers height until it eventually the CSS display property is changed to “None” (slide in simply reverses this). Fade out reduces the opacity of the contents of the container until it can hardly be seen and changes the CSS display property to “None” (fade in reverses this). </p>

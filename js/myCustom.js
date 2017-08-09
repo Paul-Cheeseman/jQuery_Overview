@@ -41,20 +41,33 @@ $(".domHighlight").click(function(e) {
   them with an accompanying message
 **********************************************************************************/
 
-// Very Small Devices (Phones)
-if ($(window).width() < 769){
+// Very Small Devices (Phones portraint)
+if ($(window).width() < 400){
+   //if screen width less that 400, reduce to menu title to avoid miss-alignment due to overspill
+    $(".navbar-brand").replaceWith("<a class='navbar-brand' href='#''>jQuery</a>");
+}
+
+if (($(window).width() > 720) && ($(window).width() < 820)){
+   //if screen width less that 400, reduce to menu title to avoid miss-alignment due to overspill
+    $(".navbar-brand").replaceWith("<a class='navbar-brand' href='#''>jQuery</a>");
+}
+
+
+// Very Small Devices (Phones portraint)
+if ($(window).width() < 720){
+    //Removing the jQuery Dashboard and the interactive DOM because they are fixed width of 650
     $(".interactive-elements").remove();
+    //Removing the img for reason given!
     $("figcaption").remove();    
     $("img").replaceWith("<em>IMG's removed from mobile view because associated interactive are disabled a small mobile devices</em>");
 
-     window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
-     //remove modal links from menu
-     //put up message
-
-    $(".navbar-brand").replaceWith("<a class='navbar-brand' href='#''>jQuery</a>");
-
-
+//     window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
+ 
 }
+
+
+
+/*
 // Small Devices (Tablet)
 else if ($(window).width() < 991){
      window.alert("small device - tablet");
@@ -68,5 +81,5 @@ else if ($(window).width() < 1199){
 else{
     window.alert("Large device - tablet");   
 }
-
-window.alert ("Window is: " +$(window).width());
+*/
+//window.alert ("Window is: " +$(window).width());
