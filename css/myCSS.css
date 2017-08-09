@@ -360,14 +360,14 @@
 
     #site-intro {
         padding-top: 50px;
-        height: 625px;
+        height: 700px;
         color: #fff;
 		background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed; 
     }
 
     #intro-jQuery {
         padding-top: 50px;
-        height: 1550px;
+        height: 1800px;
         color: #fff;
         background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
@@ -375,14 +375,14 @@
 
     #selecting-jQuery {
         padding-top: 50px;
-        height: 1800px;
+        height: 2200px;
         color: #fff;
         background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
 
     #changing-jQuery {
         padding-top: 50px;
-        height:950px;
+        height:1150px;
         color: #fff;
         background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
@@ -390,7 +390,7 @@
 
     #events-jQuery {
         padding-top: 50px;
-        height: 1650px;
+        height: 1950px;
         color: #fff;
         background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
@@ -398,7 +398,7 @@
 
     #this-jQuery {
         padding-top: 50px;
-        height: 900px;
+        height: 1050px;
         color: #fff;
         background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
@@ -406,7 +406,7 @@
 
     #intro-dom {
         padding-top: 50px;
-        height: 1100px;
+        height: 1250px;
         color: #fff;
         background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
     }
