@@ -51,6 +51,7 @@ if ($(window).width() < 769){
      //remove modal links from menu
      //put up message
 
+    $(".class").replaceWith("<a class='navbar-brand' href='#''>jQuery</a>");
 
 
 }
