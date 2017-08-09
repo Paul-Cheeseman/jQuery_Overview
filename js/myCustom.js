@@ -45,7 +45,7 @@ $(".domHighlight").click(function(e) {
 if ($(window).width() < 769){
     $(".interactive-elements").remove();
     $("figcaption").remove();    
-    $("img").replaceWith("<em>IMG's removed from mobile view because they only apply to the interactive elements which cannot be viewed on a small mobile device</em>");
+    $("img").replaceWith("<em>IMG's removed from mobile view because associated interactive are disabled a small mobile devices</em>");
 
      window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
      //remove modal links from menu
