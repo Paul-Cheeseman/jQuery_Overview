@@ -244,33 +244,45 @@
 		</li>
         <h4>Changing HTML/CSS with jQuery Effects</h4>
             <p>jQuery effects are a simple was of combining different CSS animation effects via one command, there are various, but this overview will only be using fade in/out and slide in/out via event handlers. To watch how the effects work, go to the dashboard in the elements section and drill down to the dashboard HTML (how to do this is explained in preceeding sections). Then press the top slide toggle button and watch the HTML change, press it again to see the effect in reverse and then try the fade toggle button.</p>
-            <br>
-            <p> From watching the HML you will have seen something happening very quickly! If you now use the slow version of the toggle buttons the CSS manipulation can be seen more clearly. Slide out hides the overflow of the container, then reduces the containers height until it eventually  the CSS display property is changed to “None” (slide in simply reverses this). Fade out reduces the opacity of the contents of the container until it can hardly be seen and changes the CSS display property to “None” (fade in reverses this). </p>
+
+           <p> From watching the HML you will have seen something happening very quickly! If you now use the slow version of the toggle buttons the CSS manipulation can be seen more clearly. Slide out hides the overflow of the container, then reduces the containers height until it eventually  the CSS display property is changed to “None” (slide in simply reverses this). Fade out reduces the opacity of the contents of the container until it can hardly be seen and changes the CSS display property to “None” (fade in reverses this). </p>
 	</div>
     <div id="this-jQuery" class="container-fluid">
-        <h1>jQuery and 'THIS'</h1> Sometimes you only want to select or target the active screen element, for instance the element being clicked or hovered over. To do this you need to use the keyword THIS in the event handler to specify the event handler code is to only apply to the active element, and by active element it is ment "the one through which action is invoked". If you bring up the dashboard and hover over the 3 grouped buttons, you will notice that they change to be black with red writing, this is because a group event for that button class has been set up, so if any of the buttons are hovered over, they all change, with the code shown below.
-        <br>
-        <code>  $(".buttonClass").mouseover(function(){<br>
-    $(".buttonClass").removeClass("background-grey");<br>
-    $(".buttonClass").addClass("background-black");<br>
-    $(".buttonClass").addClass("text-red"); <br>
-  });<br>
-<br>
-  $(".buttonClass").mouseleave(function(){<br>
-    $(".buttonClass").removeClass("background-black");<br>
-    $(".buttonClass").removeClass("text-red");<br>
-    $(".buttonClass").addClass("background-grey");<br>
-  });<br>
-</code>
-        <br> This isn't the specific change to the active element that was mentioned above, but if you now click on one of those buttons, you wil see that each one independently cycles through odd/even, again you can see this change in the HTML.</p>
+        <h1>jQuery and 'THIS'</h1> 
+        <p>Sometimes you only want to select or target the active screen element, for instance the element being clicked or hovered over. To do this you need to use the keyword THIS in the event handler to specify the event handler code is to only apply to the active element, and by active element it is ment "the one through which action is invoked". If you bring up the dashboard and hover over the 3 grouped buttons, you will notice that they change to be black with red writing, this is because a group event for that button class has been set up, so if any of the buttons are hovered over, they all change, with the code shown below.</p>
 
-        <code> $(".buttonClass").click(function() { <br>
-    if ($(this).text() == "Odd amount")<br>
-        $(this).text("Even amount");<br>
-      else<br>
-      $(this).text("Odd amount");<br>
-  });</code>
-        <br>
+		<ul>
+			<li><code>  $(".buttonClass").mouseover(function(){</code></li>
+			<ul>
+    			<li><code>$(".buttonClass").removeClass("background-grey");</code></li>
+    			<li><code>$(".buttonClass").addClass("background-black");</code></li>
+    			<li><code>$(".buttonClass").addClass("text-red"); </code></li>
+    		</ul>
+			<li><code>});</code></li>
+		</ul>
+		<ul>
+			<li><code>$(".buttonClass").mouseleave(function(){<</code></li>
+			<ul>
+    		<li><code>$(".buttonClass").removeClass("background-black");</code></li>
+    		<li><code>$(".buttonClass").removeClass("text-red");</code></li>
+    		<li><code>$(".buttonClass").addClass("background-grey");</code></li>
+    		</ul>
+  			<li><code>});</code></li>
+  		</ul>
+    
+        <p> This isn't the specific change to the active element that was mentioned above, but if you now click on one of those buttons, you wil see that each one independently cycles through odd/even, again you can see this change in the HTML.</p>
+
+		<ul>
+			<li><code>$(".buttonClass").click(function() {</code></li>
+			<ul>
+    			<li><code>if ($(this).text() == "Odd amount")</code></li>
+        		<li><code>$(this).text("Even amount");</code></li>
+      			<li><code>else</code></li>
+      			<li><code>$(this).text("Odd amount");</code></li>
+      		</ul>
+  			<li><code>});</code></li>
+  		<ul>
+
     </div>
 
         <!-- jQuery Modal -->    
