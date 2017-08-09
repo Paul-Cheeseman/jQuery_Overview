@@ -68,3 +68,5 @@ else if ($(window).width() < 1199){
 else{
     window.alert("Large device - tablet");   
 }
+
+window.alert ("Window is: " +$(window).width());
