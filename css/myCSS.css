@@ -1,8 +1,83 @@
 
-	/***************************************/
-	/* Some hack up, never to be seen CSS! */
-	/***************************************/
-	
+
+	figure{
+		margin-bottom: 15px;
+	}
+
+	.screen-setup-img{
+		height: 320px;
+		width: 700px;
+		border-radius: 5px;
+		border: 2px solid black;
+	}
+
+    body {
+        position: relative;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    #site-intro {
+        padding-top: 50px;
+        height: 550px;
+        color: #fff;
+		background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed; 
+    }
+
+    #intro-jQuery {
+        padding-top: 50px;
+        height: 750px;
+        color: #fff;
+        background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+
+    #selecting-jQuery {
+        padding-top: 50px;
+        height: 1150px;
+        color: #fff;
+        background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+    #changing-jQuery {
+        padding-top: 50px;
+        height: 800px;
+        color: #fff;
+        background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+
+    #events-jQuery {
+        padding-top: 50px;
+        height: 800px;
+        color: #fff;
+        background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+
+    #this-jQuery {
+        padding-top: 50px;
+        height: 650px;
+        color: #fff;
+        background: #3061b2 url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+
+    #intro-dom {
+        padding-top: 50px;
+        height: 575px;
+        color: #fff;
+        background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed;
+    }
+
+
+    .text-red {
+        color: rgb(255, 0, 0);
+    }
+
+    .text-blue {
+        color: rgb(24, 30, 231);
+    }
 
 
 		ul{
