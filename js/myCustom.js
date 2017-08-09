@@ -61,25 +61,10 @@ if ($(window).width() < 720){
     $("figcaption").remove();    
     $("img").replaceWith("<em>IMG's removed from mobile view because associated interactive are disabled a small mobile devices</em>");
 
-//     window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
- 
+    window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
 }
 
 
-
-/*
-// Small Devices (Tablet)
-else if ($(window).width() < 991){
-     window.alert("small device - tablet");
-     //put up message about "as you maybe viewing this on a tablet, and as such not have access to dev tools, you may not be able to perform some aspects of the practical exerices"
-}
-// Medium Devices (Laptop)
-else if ($(window).width() < 1199){
-     window.alert("medium device - tablet");
-}
-//Large Devices (Desktops)
-else{
-    window.alert("Large device - tablet");   
-}
-*/
-//window.alert ("Window is: " +$(window).width());
+$(window).on("orientationchange",function(){
+  location.reload(true);
+});

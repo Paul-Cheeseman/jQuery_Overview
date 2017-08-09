@@ -116,18 +116,22 @@
         <p>Launch the jQuery Dashboard and press the red and then the blue button under 'add class', you will see in the elements panel that both a red and a blue class are added to elements of the class, test-class. But you will also notice, that subsequent presses have no effect and the text stays blue, this is because the element has two colour classes applied and so normal CSS prescedence will apply and in this case blue is the final colour/rule in the cascade, so it is the one which is applied. This issue can be avoided by adding one class while removing the other, using the 'class add/remove' buttons on the dashboard illustrate this, and looking at the HTML changes clearly shows this is happening. If you look in the jQuery file for this overview (js/myExample.js) you will it shown how 'event chaining' can be used to execute commands in a back to back sequence. The button click associated with the id addRemClass is written in a line by line way: </p>
         <ul>
             <li><code>$("#addRemClassRed").click(function(){</code></li>
-            <ul>
-                <li><code>$(".test-class").addClass("text-red");</code></li>
-                <li><code>$(".test-class").removeClass("text-blue");</code></li>
-            </ul>
+            <li>
+                <ul>
+                    <li><code>$(".test-class").addClass("text-red");</code></li>
+                    <li><code>$(".test-class").removeClass("text-blue");</code></li>
+                </ul>
+            </li>
             <li><code>});</code></li>
         </ul>
         <p>The code for addRemClassBlue is written using methos chaining, which enables a shorter syntax and is commonly used in jQuery:</p>
         <ul>
             <li><code>$("#addRemClassBlue").click(function(){</code></li>
-            <ul>
-                <li><code>$(".test-class").addClass("text-blue").removeClass("text-red");</code></li>
-            </ul>
+            <li>
+                <ul>
+                    <li><code>$(".test-class").addClass("text-blue").removeClass("text-red");</code></li>
+                </ul>
+            </li>
             <li><code>});</code><li>
         </ul>
                 <h4>Changing HTML/CSS with jQuery Effects</h4>
@@ -139,33 +143,39 @@
         <p>Sometimes you only want to select or target the active screen element, for instance the element being clicked or hovered over. To do this you need to use the keyword THIS in the event handler to specify the event handler code is to only apply to the active element, and by active element it is ment "the one through which action is invoked". If you bring up the dashboard and hover over the 3 grouped buttons, you will notice that they change to be black with red writing, this is because a group event for that button class has been set up, so if any of the buttons are hovered over, they all change, with the code shown below.</p>
         <ul>
             <li><code>  $(".buttonClass").mouseover(function(){</code></li>
-            <ul>
-                <li><code>$(".buttonClass").removeClass("background-grey");</code></li>
-                <li><code>$(".buttonClass").addClass("background-black");</code></li>
-                <li><code>$(".buttonClass").addClass("text-red"); </code></li>
-            </ul>
+            <li>
+                <ul>
+                    <li><code>$(".buttonClass").removeClass("background-grey");</code></li>
+                    <li><code>$(".buttonClass").addClass("background-black");</code></li>
+                    <li><code>$(".buttonClass").addClass("text-red"); </code></li>
+                </ul>
+            </li>
             <li><code>});</code></li>
         </ul>
         <ul>
-            <li><code>$(".buttonClass").mouseleave(function(){<</code></li>
-            <ul>
-                <li><code>$(".buttonClass").removeClass("background-black");</code></li>
-                <li><code>$(".buttonClass").removeClass("text-red");</code></li>
-                <li><code>$(".buttonClass").addClass("background-grey");</code></li>
-            </ul>
+            <li><code>$(".buttonClass").mouseleave(function(){</code></li>
+            <li>
+                <ul>
+                    <li><code>$(".buttonClass").removeClass("background-black");</code></li>
+                    <li><code>$(".buttonClass").removeClass("text-red");</code></li>
+                    <li><code>$(".buttonClass").addClass("background-grey");</code></li>
+                </ul>
+            </li>
             <li><code>});</code></li>
         </ul>
         <p> This isn't the specific change to the active element that was mentioned above, but if you now click on one of those buttons, you wil see that each one independently cycles through odd/even, again you can see this change in the HTML.</p>
         <ul>
             <li><code>$(".buttonClass").click(function() {</code></li>
-            <ul>
-                <li><code>if ($(this).text() == "Odd amount")</code></li>
-                <li><code>$(this).text("Even amount");</code></li>
-                <li><code>else</code></li>
-                <li><code>$(this).text("Odd amount");</code></li>
-            </ul>
+            <li>
+                <ul>
+                    <li><code>if ($(this).text() == "Odd amount")</code></li>
+                    <li><code>$(this).text("Even amount");</code></li>
+                    <li><code>else</code></li>
+                    <li><code>$(this).text("Odd amount");</code></li>
+                </ul>
+            </li>
             <li><code>});</code></li>
-            <ul>
+        </ul>
     </div>
     <!-- jQuery Modal -->
     <div id="jQuery-modal" class="modal fade" role="dialog">
@@ -173,7 +183,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button-sm" class="close" data-dismiss="modal">CLOSE (X)</button>
+                    <button class="close" data-dismiss="modal">CLOSE (X)</button>
                     <h2 class="modal-title .text-center">jQuery Dashboard</h2>
                 </div>
                 <div class="modal-body">
@@ -223,14 +233,18 @@
         <p>The Document Object Model (DOM) is a hierarchical view of the page from the perspective of the browser. Each element of the DOM is an object which will have properties (values which are changable) and methods (perform actions to change or obtain properties).</p>
         <p>At the top is the window object which represents the browser window, under that is the document object which represents the current web page/document, HTML object represents all the HTML elements within the document. Following HTML are the HEAD and BODY, then the elements the user has put to build their webpage as they wish. Its worth being aware that when working with the DOM you will normally only target elements in the BODY section. Within the BODY tag the hierarchy is set by how the different elements of code enclose each other. If you indent your code correctly you'll be able to the different encloures (or DOM levels) from the indentation. For example, below you can see the two enclosure levels, as the the level_2 elements are enclosed by the level_1 elements they are a level down in the down the DOM hierarchy relative to the level_1 elements.</p>
         <ul>
-            <li><code>&ltdiv class="level_1"&gt</code></li>
-            <ul>
-                <li><code>&ltdiv class="level_2"&gt</code></li>
-            </ul>
-            <li><code>&ltdiv class="level_1"&gt</code></li>
-            <ul>
-                <li><code>&ltdiv class="level_2"&gt</code></li>
-            </ul>
+            <li><code>&lt;div class="level_1"&gt;</code></li>
+            <li>
+                <ul>
+                    <li><code>&lt;div class="level_2"&gt;</code></li>
+                </ul>
+            </li>
+            <li><code>&lt;div class="level_1"&gt;</code></li>
+            <li>
+                <ul>
+                    <li><code>&lt;div class="level_2"&gt;</code></li>
+                </ul>
+            <li>
         </ul>
         <p>The DOMs different elements have a family based relationship, in that they each have a parent and can have children or siblings and this can clearly been seen on the interactive DOM hierarchy (invoke via main menu). With jQuery you don’t have to directly reference an element via class or ID to select it, you can traverse the DOM up/down/left and right using:</p>
         <ul>
@@ -241,13 +255,15 @@
         </ul>
         <p>What is a viewed as a parent, child or sibling is context specific depending on the element selected, and this maybe difficult to conceptualise which is why the interactive DOM Hierarchy can be useful.</p>
     </div>
+    
+
     <!-- DOM Modal -->
     <div id="dom-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button-sm" class="close" data-dismiss="modal">CLOSE(X)</button>
+                    <button class="close" data-dismiss="modal">CLOSE (X)</button>
                     <h2 class="modal-title .text-center">Introduction to the DOM</h2>
                 </div>
                 <div class="modal-body">
