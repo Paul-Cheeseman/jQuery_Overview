@@ -17,65 +17,59 @@
     }
 
 
+    #site-intro {
+        padding-top: 50px;
+        height: 550px;
+        color: #fff;
+		background: #0494ed url('img/jQuery_icon2.png') no-repeat center center fixed; 
+    }
+
 
     #intro-jQuery {
         padding-top: 50px;
-        height: 750px;
+        height: 700px;
         color: #fff;
         background-color: #1E88E5;
     }
 
-    #using-jQuery {
-        padding-top: 50px;
-        height: 1500px;
-        color: #fff;
-        background-color: #673ab7;
-    }
-
     #selecting-jQuery {
         padding-top: 50px;
-        height: 1000px;
+        height: 850px;
         color: #fff;
         background-color: #ff9800;
     }
 
     #changing-jQuery {
         padding-top: 50px;
-        height: 1000px;
+        height: 550px;
         color: #fff;
         background-color: #009688;
     }
 
 
+    #events-jQuery {
+        padding-top: 50px;
+        height: 750px;
+        color: #fff;
+        background-color: #119900;
+    }
+
+
     #this-jQuery {
         padding-top: 50px;
-        height: 1000px;
+        height: 650px;
         color: #fff;
         background-color: #008654;
     }
 
-    #trying-jQuery {
-        padding-top: 50px;
-        height: 500px;
-        color: #fff;
-        background-color: #00bcd4;
-    }
 
-
-    #intro-DOM {
+    #intro-dom {
         padding-top: 50px;
-        height: 500px;
+        height: 575px;
         color: #fff;
         background-color: red;
     }
 
-
-    #trying-DOM {
-        padding-top: 50px;
-        height: 500px;
-        color: #fff;
-        background-color: purple;
-    }
 
     .text-red {
         color: rgb(255, 0, 0);
@@ -85,6 +79,7 @@
         color: rgb(24, 30, 231);
     }
     </style>
+
 </head>
 /* THE HEIGHT SIZES NEED TO BE MADE RESPONSIVE FOR IT TO BE USEABLE ON MOBILE */ /* Just put in a decent value for each screen size and get it to load with that value */
 
@@ -97,101 +92,163 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="#">jQuery Overview</a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#intro-jQuery">Intro</a></li>
+                        <li><a href="#site-intro">Site Intro</a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">jQuery Explanation<span class="caret"></span></a>
                             <ul class="dropdown-menu">
+                        		<li><a href="#intro-jQuery">jQuery Intro</a></li>                            
                                 <li><a href="#selecting-jQuery">Selecting with jQuery</a></li>
                                 <li><a href="#changing-jQuery">Changing HTML/CSS with jQuery</a></li>
                                 <li><a href="#this-jQuery">jQuery and THIS</a></li>
                             </ul>
-                            <li><a href="#trying-jQuery">Trying out jQuery</a></li>
-                            <li><a href="#intro-DOM">DOM Explanation</a></li>
-                            <li><a href="#trying-DOM">DOM Interactive Hierarchy</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#jQuery-modal">jQuery Dashboard</a></li>
+                            <li><a href="#intro-dom">DOM Intro</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#dom-modal">Interactive DOM Hierarchy</a></li>                            
+
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+
+    <div id="site-intro" class="container-fluid">
+        
+        <h1>Site Intro</h1>
+
+        <p>This is a re-styled version of the content used to give a presentation to some fellow students as part of a learning exercise for myself and for those students who had not understood aspects of jQuery. The purpose was to illustrate and explain the basic functionality of jQuery through a jQuery based dashboard and an interactive DOM diagram I created using jQuery for my own development. This overview assumes a very basic understanding or HTML, CSS and JavaScript - plus an ability to view the page elements and console log through the Dev tools of the browser being used. It is also worth noting that the use of Chrome is assumed, so although alternative browsers will have similar tools the instructions to use them may differ.The interactive aspects of the site are only intended to be used on ipads or larger devices, any smaller devices will just get the text.</p>
+
+		<p>The dev tools are to my knowledge only available on .</p>
+
+        Need to mention about DevTools on ipad etc, unusable buttons greyed out on those
+        Also, no modals on small small mobile Devices
+
+    </div>    
     <div id="intro-jQuery" class="container-fluid">
+        
+
+        Need to mention about DevTools on ipad etc, unusable buttons greyed out on those
+        Also, no modals on small small mobile Devices
+
+
+
         <h1>jQUERY Intro</h1>
-        <p>This is a re-styled version of the content used to give a presentation to some fellow students as part of a learning exercise for myself and those students who had not understood aspects of jQuery. The purpose was to illustrate and epxlain through a jQuery based dashboard, the basic functionality of jQuery, so, on with the show! :-)</p>
-        POINT OUT VVERY EALRY THAT THE INTERACTIVE DOM DEMO HAS BEEN WRITTEN BY ME, LINK TO Its ALSO POINT OUT CAN SKIP EXPLAINATION AND TRY COMMANDS OUT ON DASHBOARD - just a simplified, clear whay of trying out basic jQuery THE INTENTION IS, IS TO ENABLE THE READER TO GO play with jQUERY and also take a look at the code to see how things are heppening, in a simple and straighforward way. PUT IN HERE CAN JUST FAST TRACK TO INTERACTIVE BITS PUT IN A PREVENTION FOR IT TO LOAD ON MOBILE "AS IT LOOKS PANTS" ALSO, A LITTLE SOMETHING ABOVE THE MENU??? ALSO, ITS NOT MEANT TO BE A COMPREHENISVE GUIDE, BUT A QUICKSTART OVERVIEW AND EXCUSE FOR ME TO TRY OUT SOME JQUERY!
-        <p>This overview assumes a very basic understanding or HTML, CSS and JavaScript - plus an ability to view the page elements and console log through the Dev tools of the browser being used. It is also worth noting that the use of Chrome is assumed, so although alternative browsers will have similar tools the instructions to use them may differ.</p>
-        <br>
-        <h4>JQUERY - What is it, what does it do?</h4>
+
+
+        <p>This is a re-styled version of the content used to give a presentation to some fellow students as part of a learning exercise for myself and those students who had not understood aspects of jQuery. The purpose was to illustrate and epxlain through a jQuery based dashboard, and an interactive DOM diagram I created using jQuery, the basic functionality of jQuery. This overview assumes a very basic understanding or HTML, CSS and JavaScript - plus an ability to view the page elements and console log through the Dev tools of the browser being used. It is also worth noting that the use of Chrome is assumed, so although alternative browsers will have similar tools the instructions to use them may differ.        The interactive aspects of the site are only intended to be used on ipads or larger devices, any smaller devices will just get the text.</p>
+
+        <h4>jQuery - What is it, what does it do?</h4>
         <p>jQuery is a library which has wrapped up, shortened and simplified a whole host of JavaScript (JS) operations which would normally require numerous lines of JavaScript code to perform.</p>
+
         <h4>Why use it?</h4>
-        <p>It has a shorter and easier to learn syntax than JavaScript while retaining a lot of the power of vanilla JS. It is important to appreciate that other JS libraries exist, ush as xxxxx, xxxxx and xxxxx.</p>
-        <h4>HOW CAN YOU OBTAIN JQUERY?</h4>
-        <p>So, how do you enable jQuery? You need to pull in the jQuery library to your HTML code and this can be done in one of two ways. You can download the library and reference it locally on your machine, or you can use a content delivery network (CDN).</p>
-        <h4>HOW TO IMPLEMENT jQuery IN YOUR HTML PAGE</h4>
-        <p>Its best practice to put the reference to the jQuery local file or CDN at the end of the body section so that the user interface aspects of the page can download before the jQuery library.</p>
-        <p>When you are running a script which uses the jQuery library, you need to ensure two things.</p>
-        <p>Your script is loaded after the jQuery library in the HTML file, otherwise any code in your jQuery file which tries to run before the library has downloaded will fail.</p>
-        <p>That the document object model (DOM) has loaded before the script. This is essential if your script interacts with DOM elements, as they may not have loaded by the time the script becomes active.</p>
-        <p>To achieve this you can either put the script call in the head your HTML page and use the document.ready() function to encapsulate your script or put your script at the bottom of the body section.</p>
-        <p>JQuery is a JavaScript library function which can be seen by typing jQuery or $, entering either of these on its own (with the jQuery library loaded) on the command line. This is the function into which the jQuery commands are entered and then translated into JavaScript which can be run in the browser. So…. jQuery needs some input to do stuff! </p>
+        <p>It has a shorter and easier to learn syntax than JavaScript while retaining a lot of the power of vanilla JS. It is important to appreciate that other JS libraries exist, such as xxxxx, xxxxx and xxxxx.</p>
+
+        <h4>How do you obtain jQuery?</h4>
+        <p>You need to load the jQuery library when yor page loads and this can be achieved by downloading a jQuery library to your local machine or you cn use a content delivery network (CDN) which remotley hosts the library and it can be downloaded from there. Whichever method you choose you will need to provide a link to library in your page. A local copy is being used in this instance and you can check the HTML source of this page (via Dev tools) to see the link (its at the bottom of the body section)</p>
+
+        <p>It is important to be clear on the distinction between the jQuery library and your own jQuery file which will contain your page/site specific jQuery code, as both will need to be included (linked to) within the page.</p>
+        <h4>How to implement jQuery in your HTML page</h4>
+        <p>Once you have your link, it is worth knowing that its best practice to put the reference to the jQuery local file or CDN at the end of the body section so that the user interface aspects of the page can download before the jQuery library.</p>
+        
+        <p>When you are using the jQuery library, you need to ensure two things. First, your own jQuery script file is loaded after the jQuery library in the HTML file, otherwise any code in your jQuery file which tries to run before the library has downloaded will fail. Second, the document object model (DOM) has loaded before the script. This is essential if your script interacts with DOM elements, as they may not have loaded by the time the script becomes active. To achieve this you can either put the script link in the head your HTML page and use the document.ready() function at the top of your jQuery script file to encapsulate the scripts within it or put your script file link at the bottom of the body section.</p>
+
     </div>
     <div id="selecting-jQuery" class="container-fluid">
-        <h1>Selecting with jQuery</h1>
-        <h4>JQUERY SELECTORS</h4>
-        <p>Selectors enable jQuery to reference elements within the document object model (DOM), which in essence is the browsers view/interpretation of the structure of the HTML page.</p>
+        <h1>JQUERY SELECTORS</h1>
+        
+        <p>Strictly speaking, selectors enable jQuery to reference elements within the current document object (an object in this sense is a way of organising data), and the current document object is structured based on the document object model (DOM). In essence the DOM the browsers view/interpretation of the structure of the HTML page.</p>
+
         <p>jQuery can select things as follows, you can try these and others out on the jQuery dashboard section via the dev tools console because those elements, clases and id's exist within the dashboard code (infact you can try them now, as the dashboard code is contained within this pages code!):</p>
-        element: <code> $("h4");</code>
-        <br> class: <code> $(".testClass"); </code>
-        <br> ID: <code> $("#testA");</code>
-        <p>When jQuery doesn’t find something it returns <code>[prevObject: r.fn.init(1)]</code>, which is an object which contains information about the document. What the <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">document'</a> is will be covered a bit more later on, but for now its enough to know that that return value means jQuery is saying "I can't find it". You can try this out now by typing <code>$("youll-not-find-me");</code></p> into the dev tools console.
-        <p>When it finds something it gives an output, for example (and again, like all exmaples, this can be tried out), <code>$("test-class")</code> would output <code>[h4#test-a.test-class, h4#test-b.test-class, h4#test-c.test-class, prevObject: r.fn.init(1)]</code> which is shows the 4 elements (which are h4 elements with an id beginning test-*) along with the page object (which can be ignored :-)) </p>
-        <p>jQuery also uses pseduo selectors, what are pseduo selectors? A pseduo selector is a selector who’s return value is context specific. This sounds a little complex but it just means that the results returned by jQuery depend on the current state of the page. For example jQuery has first and last pseduo selectors and these just select the first or last of given selection. So, if you were to run <code>$(".test-class:first()")</code> on the current page, you get <code>h4#test-a.test-class</code> returned (I have, and will from now on, omit the returned document object), which is the first of the class 'test-class' selection group.</p>
-        <p> This is an experiment to try out in the next section with the jQuery dashboard in view as their will be changes to observe. If you now go to the 'elements' tab on the dev tools (to the left of the console tab on Chrome), you can drill down and see the table, a rough guide is to expand the following, in the following order:
-            <br>
-            <br> body, div id="trying-jQuery", div class="row", div class="col-lg-4", div class="display-dashboard-conatiner", div id="display-dashboard"
-            <br>
-            <br> Once the dashboard HTML can be seen, then make a note of the following jQuery commands, set your screen up as follows PUT IN A RESPONSIVE SS OR REQUIRED SCREEN SET UP, then run the commands in order: An before you type anything in, be assured you can't break anything, if anything goes wrong you can simply refresh your page :-)
-            <br> To check how may elements of this type: <code> $(".test-class");</code>
-            <br> To see what jQuery deems first of this type: <code> $(".test-class:first()");</code>
-            <br> Remove that element: <code> $(".test-class:first()").remove();</code>
-            <br> Now see what jQuery deems first of this type: <code> $(".test-class:first()");</code>
-            <br> As you will have seen, initially the first of the test-class selection was <code>h4#test-a.test-class</code>, but after that element had been removed the first element became <code>h4#test-b.test-class</code>. Its worth jQuery (along with CSS) has a <a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">variety of different pseduo selectors</a> of which <code>:first</code> and <code>:last</code> are just a small example.
-        </p>
+		
+		<ul>
+			<li>element: <code> $("h4");</code></li>
+			<li>class: <code> $(".testClass"); </code></li>
+        	<li>ID: <code> $("#testA");</code></li>
+		</ul>
+        <p>When jQuery doesn’t find something it returns <code>[prevObject: r.fn.init(1)]</code>, which is an object which contains information about the document. What the <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">document'</a> is will be covered a bit more later on, but for now its enough to know that that return value means jQuery is saying "I can't find it". You can try this out now by typing <code>$("youll-not-find-me");</code> into the dev tools console.</p>
+
+        <p>When jQuery finds something it gives an output, for example (and again, like all exmaples  given here, it can be tried out on this page via dev tools), <code>$("test-class")</code> would output <code>[h4#test-a.test-class, h4#test-b.test-class, h4#test-c.test-class, prevObject: r.fn.init(1)]</code> which is shows the 4 elements (which are h4 elements with an id beginning test-*) along with the page object</p>
+
+        <p>jQuery also uses pseduo selectors, what are pseduo selectors? A pseduo selector is a selector who’s return value is context specific. This sounds a little complex but it just means that the results returned by jQuery depend on the current state of the page. For example jQuery has first and last pseduo selectors and these just select the first or last of given selection. So, if you were to run <code>$(".test-class:first()")</code> on the current page, you get <code>h4#test-a.test-class</code> returned (Im that example I have, and will from now on, omit the returned document object), which is the first of the class 'test-class' selection group.</p>
+
+        <p> This is an experiment to try out, all you need to do is to open dev tools and go to the console, then launch the jQuery Dashboard modal so you can see what you will be searching for and the effects of any changes. Please be aware that you can launch and dismiss (to get back to these instructions) and the  modal will relaunch in the state it was before closure. Also before you type anything in, be assured you can't break anything, if anything goes wrong you can simply refresh your page to refresh the modal.Now position the modal so that the "Test Text to Change" and the lines of text below it are visable on your screen at the same time as the elements view. Now run the commands in the following order: </p>
+		<ul>
+            <li> To check how may elements of this type: <code> $(".test-class");</code></li>
+            <li> To see what jQuery deems first of this type: <code> $(".test-class:first()");</code></li>
+            <li> Remove that element: <code> $(".test-class:first()").remove();</code></li>
+            <li> Now see what jQuery deems first of this type: <code> $(".test-class:first()");</code></li>
+        </ul>
+
+        <p>As you will have seen, initially the first of the test-class selection was <code>h4#test-a.test-class</code>, but after that element had been removed the first element became <code>h4#test-b.test-class</code>. Its worth knowing that jQuery (along with CSS) has a <a href="https://css-tricks.com/pseudo-class-selectors/" target="_blank">variety of different pseduo selectors</a> of which <code>:first</code> and <code>:last</code> are just a small example.</p>
+
+        <strong>Please remember to refresh the page so that the dashboard is reset for futher testing/experimenting</strong>
+
     </div>
     <div id="changing-jQuery" class="container-fluid">
-        <h1>Changing HTML/CSS with jQuery</h1>
-        <h4>Changing HTML/CSS with jQuery Events</h4>
-        <p>As shown in the previous section, jQuery can be used to change as well as select HTML/CSS, scroll down to the dashboard and input the jQuery commands into the console and see the results. It is worth watching how the elemtns are changed via jQuery to understand what is happening, to do this go to the elements tab and DRILL DOWN TO DASHBAORD HTML WITH CONSOLE AVAIALABLE
-            <br>
+        <h1>Changing HTML/CSS with jQuery Events</h1>
+
+        <p>As shown in the previous section, jQuery can be used to change as well as select HTML/CSS, lets check this out, launch the jQuery dashboard and set up the layout as guided in the previous section, with the only difference being you need to have elements selected in dev tools rather than console. The console may already be showing at the bottom of the elements pane (although you may need to expand it up), if not press escape and it will appear and adjust it as necessary. In this instance we want to see the changes to the HTML, so we need to get the HTML which will change into view. So in the elements pane drill down into the HTML, by selecting these elements and expanding them, in this order: </p>
+        
+        <p><code>body, div id=jQuery-modal, div class="modal-dialog", div="modal-content", div="modal-body", div="display-dashboard-container", div id="display-dashboard"</code></p>
+
+        <p>Then adjust your page so the h4 elements with an id of test-* are in view, ideally you page layout will look something like:</p>
+
+
+        <br>
+        <br>
+            SCREEN SHOT
+        <br>
+        <br>
+
+        <p>Now run the following commands:<p>
             <ul>
                 <li>Set all h4 elements to red <code>$("h4").css("color", "red");</code></li>
                 <li>Set all elements with a class .testClass to blue: <code>$(".testClass").css("color", "blue");</code></li>
                 <li>Set the elemt with an id of test-b to green <code>$("#test-b").css("color", "green"); </code></li>
             </ul>
-            <p>As you would have seen, the changes made to the HTML are inline which is not best practice, so you should add a class, this could be done via the console but we can create an event to do this.</p>
-            <h4>EVENTS IN JQUERY</h4>
-            <P>Events are just something happening on the screen, these could be a mouse click, a key being pressed or released, or something being hovered over by the cursor – there are loads of different events and they can be found NNNNNNNNNNN, in essence event handlers link an on screen event some code.</P>
-            <p>This overview will predominantly use the click event and a bit of the mouseover even in this demo. If you look in the style section of this page (in the HEAD section) you will see two CSS classes, red and blue, these are the classes that will be used for this overview. Click on the events button in the dashboard, this uses a click event to get jQuery to change the page HTML to show the events panel! From this point on you will only need the elements section of Google Dev Tools, so you can close the console window if it is taking up space. If press the red then the blue button under 'add class', you will see that both a red and a blue class are added to elements of the class, test-class. But you will also notice, that subsequent presses have no effect and the text stays blue, this is because the element has two colour classes applied and so normal CSS prescedence will apply and as blue is the final colour/rule in the cascade, it is the one which is applied. This issue can be avoided by adding one class while removing the other, using the 'class add/remove' buttons on the dashboard illustrate this, and looking at the HTML changes clearly shows this is happening. If you look in the jQuery file for this overview you will it shown how 'event chaining' can be used to execute commands in a back to back sequence. The button click associated with the id addRemClass is written in a line by line way:
-                <br>
-                <code>$("#addRemClassRed").click(function(){<br>
-     $(".test-class").addClass("text-red");<br>
-     $(".test-class").removeClass("text-blue");<br>
-  });</code>
-                <br> The code for addRemClassBlue is written using methos chaining, which enables a shorter and commonly used jQuery syntx to be implemented:
-                <br>
-                <code>$("#addRemClassBlue").click(function(){<br>
-     $(".test-class").addClass("text-blue").removeClass("text-red");<br>
-  });</code>
-                <br>
-            </p>
-            <h4>Changing HTML/CSS with jQuery Effects</h4>
-            <p>JQUERY EFFECTS jQuery effects are a simple was of combining different CSS animation effects via one command, there are various, but this overview will only be using fade in/out and slide in/out. To watch how the effects work, go to the dashboard in the elements section and drill down to the dashboard HTML, then press either the slide or fade toggle, then once that has finished, try the other one. You will see something happening very quickly, if you now use the slow version of this, the CSS manipulation can be seen. Slide out hides the overflow of the container, then reduces its height until it eventually change the CSS display property to “None” (slide in reverses this). Fade out reduces the opacity of the contents of the container until it can hardly be seen and changes the CSS display property to “None” (fade in reverses this). </p>
-    </div>
+
+         <p>As you would have seen, the changes made to the HTML are inline which is not best practice, so you should add a class, this could be done via the console but we can create an event to do this, which leads nicely onto the next section.</p>
+    </div>    
+    <div id="events-jQuery" class="container-fluid">
+        <h1>Changing HTML/CSS with jQuery</h1>
+
+        <h4>EVENTS IN JQUERY</h4>
+
+        <P>In essence events are user based actions, it could be a mouse click, a key being pressed or released, or something being hovered over by the cursor. There are a variety of different events and list of them can be found <a href="https://www.w3schools.com/js/js_events.asp">online</a>.
+		When set up, event handlers listen out for these events and will trigger off some code when required, and this will normally result in something observable happening on the screen.</P>
+
+        <p>This overview will use the click event and the mouseover event. From this point on you will only need the elements section of Google Dev Tools, so you can close the console section of the elements window if it is taking up space. To observe the changes you will need to drill down to the HTML div with an ID of display-dashboard, via the rote shown in the previous section.</p>
+
+        <p>Launch the jQuery Dashboard and press the red and then the blue button under 'add class', you will see in the elements panel that both a red and a blue class are added to elements of the class, test-class. But you will also notice, that subsequent presses have no effect and the text stays blue, this is because the element has two colour classes applied and so normal CSS prescedence will apply and in this case blue is the final colour/rule in the cascade, so it is the one which is applied. This issue can be avoided by adding one class while removing the other, using the 'class add/remove' buttons on the dashboard illustrate this, and looking at the HTML changes clearly shows this is happening. If you look in the jQuery file for this overview (js/myExample.js) you will it shown how 'event chaining' can be used to execute commands in a back to back sequence. The button click associated with the id addRemClass is written in a line by line way: </p>
+
+		<ul>
+			<li><code>$("#addRemClassRed").click(function(){</code></li>
+			<ul>
+     			<li><code>$(".test-class").addClass("text-red");</code></li>
+     			<li><code>$(".test-class").removeClass("text-blue");</code></li>
+     		</ul>
+  			<li><code>});</code></li>
+		</ul>
+
+        <p>The code for addRemClassBlue is written using methos chaining, which enables a shorter syntax and is commonly used in jQuery:</p>
+
+		<ul>
+			<li><code>$("#addRemClassBlue").click(function(){</code></li>
+     		<li><code>$(".test-class").addClass("text-blue").removeClass("text-red");</code></li>
+  			<li><code>});</code><li>
+		</li>
+        <h4>Changing HTML/CSS with jQuery Effects</h4>
+            <p>jQuery effects are a simple was of combining different CSS animation effects via one command, there are various, but this overview will only be using fade in/out and slide in/out via event handlers. To watch how the effects work, go to the dashboard in the elements section and drill down to the dashboard HTML (how to do this is explained in preceeding sections). Then press the top slide toggle button and watch the HTML change, press it again to see the effect in reverse and then try the fade toggle button.</p>
+            <br>
+            <p> From watching the HML you will have seen something happening very quickly! If you now use the slow version of the toggle buttons the CSS manipulation can be seen more clearly. Slide out hides the overflow of the container, then reduces the containers height until it eventually  the CSS display property is changed to “None” (slide in simply reverses this). Fade out reduces the opacity of the contents of the container until it can hardly be seen and changes the CSS display property to “None” (fade in reverses this). </p>
+	</div>
     <div id="this-jQuery" class="container-fluid">
-        <h1>jQuery and 'THIS'</h1> Sometimes you only want to select or target the active screen element, for instance the element being clicked or hovered over. To do this you need to use the keyword THIS in the event handler to specify the event handler code is to only apply to the active element, and by active element it is ment "the one through which action is invoked". If you hover over the 3 grouped buttons, you will notice that they change to be black with red writing, this is because a group event for that button class has been set up, so if any of the buttons are hovered over, they all change, with the code shown below.
+        <h1>jQuery and 'THIS'</h1> Sometimes you only want to select or target the active screen element, for instance the element being clicked or hovered over. To do this you need to use the keyword THIS in the event handler to specify the event handler code is to only apply to the active element, and by active element it is ment "the one through which action is invoked". If you bring up the dashboard and hover over the 3 grouped buttons, you will notice that they change to be black with red writing, this is because a group event for that button class has been set up, so if any of the buttons are hovered over, they all change, with the code shown below.
         <br>
         <code>  $(".buttonClass").mouseover(function(){<br>
     $(".buttonClass").removeClass("background-grey");<br>
@@ -205,7 +262,8 @@
     $(".buttonClass").addClass("background-grey");<br>
   });<br>
 </code>
-        <br> This isn't the specific change to the active element that was mentioned above, but if you now click on one of those buttons, you wil see that each one independently cycles through odd/even, again you can see this change in the HTML.
+        <br> This isn't the specific change to the active element that was mentioned above, but if you now click on one of those buttons, you wil see that each one independently cycles through odd/even, again you can see this change in the HTML.</p>
+
         <code> $(".buttonClass").click(function() { <br>
     if ($(this).text() == "Odd amount")<br>
         $(this).text("Even amount");<br>
@@ -214,12 +272,8 @@
   });</code>
         <br>
     </div>
-    <div id="trying-jQuery" class="container-fluid">
-        <h1>Trying Out jQuery</h1>
-        <p>This is a dashboard to help understand and play with jQuery. It is worth having the elements section of the Google developer tools open </p>
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#jQuery-modal">jQuery Modal</button>
-        <!-- Modal -->
+
+        <!-- jQuery Modal -->    
         <div id="jQuery-modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
@@ -241,7 +295,7 @@
                             </div>
                             <div class="events-dashboard-container">
                                 <h1>Event Based CSS Manipulation</h1>
-                                <div class="event-panal">
+                                <div class="event-panel">
                                     <p>Class Add:</p>
                                     <button id="addClassRed" class="small-button" type="button">Red</button>
                                     <button id="addClassBlue" class="small-button" type="button">Blue</button>
@@ -249,7 +303,7 @@
                                     <button id="addRemClassRed" class="small-button" type="button">Red</button>
                                     <button id="addRemClassBlue" class="small-button" type="button">Blue</button>
                                 </div>
-                                <div class="event-panal">
+                                <div class="event-panel">
                                     <p>Slide/Fade Toggles:</p>
                                     <button id="slideToggleButton" class="small-button">Slide</button>
                                     <button id="fadeToggleButton" class="small-button">Fade</button>
@@ -257,7 +311,8 @@
                                     <button id="slideToggleButtonSS" class="small-button">Slide</button>
                                     <button id="fadeToggleButtonSS" class="small-button">Fade</button>
                                 </div>
-                                <div class="event-panal">
+                                <div class="event-panel">
+                                    <p>Buttons with a class (on hover) and active element (on click) changes:</p>                                
                                     <button class="buttonClass small-button">Button 1</button>
                                     <button class="buttonClass small-button">Button 2</button>
                                     <button class="buttonClass small-button">Button 3</button>
@@ -269,31 +324,40 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="intro-DOM" class="container-fluid">
+
+    <div id="intro-dom" class="container-fluid">
         <h1>Introduction to the DOM</h1>
-        <p>The Document Object Model (DOM) The DOM is a hierarchical the page from the perspective of the browser which is rendering it, each element of the DOM is an object which will have properties (changable values) and methods (performing an action to change or obtain properties). In the next section is the DOM for a dummy page which shows this hierarchy. At the top is the window object which represents the browser window, under that is the document object which represents the current web page/document, HTML object represents all the HTML elements within the document. Following HTML are the HEAD and BODY, then the elements the user has put to build their webpage as they wish. Its worth being aware that With the DOM you will normally only target elements in the BODY section and that when past the BODY tag the hierarchy is set by how the code is laid out, and if you indent your code correctly, you'll be able to tell the level from the indentation. For example below, you can see the two different levels shown, and the level_2 items would be a level down in the down hierarchy relative to the level_1 items.</p>
-        <code>&ltdiv class="level_1" id="item_1"&gt</code>
-        <br> &nbsp&nbsp&nbsp&nbsp
-        <code>&ltdiv class="level_2" id="item_1"&gt</code>
-        <br>
-        <code>&ltdiv class="level_1" id="item_2"&gt</code>
-        <br> &nbsp&nbsp&nbsp&nbsp
-        <code>&ltdiv class="level_2" id="item_2"&gt</code>
-        <br> The DOMs different elements have a family based relationship, in that they each have a parent and can have children or siblings. With jQuery you don’t have to directly reference an element via class or ID to select it, you can traverse the DOM up/down/left and right using:
-        <br>
+        <p>The Document Object Model (DOM) is a hierarchical view of the page from the perspective of the browser. Each element of the DOM is an object which will have properties (values which are changable) and methods (perform actions to change or obtain properties).</p>
+
+        <p>At the top is the window object which represents the browser window, under that is the document object which represents the current web page/document, HTML object represents all the HTML elements within the document. 
+
+        Following HTML are the HEAD and BODY, then the elements the user has put to build their webpage as they wish. 
+
+        Its worth being aware that when working with the DOM you will normally only target elements in the BODY section. Within the BODY tag the hierarchy is set by how the different elements of code enclose each other. If you indent your code correctly you'll be able to the different encloures (or DOM levels) from the indentation. For example, below you can see the two enclosure levels, as the the level_2 elements are enclosed by the level_1 elements they are a level down in the down the DOM hierarchy relative to the level_1 elements.</p>
+
+		<ul>
+			<li><code>&ltdiv class="level_1"&gt</code></li>
+        	<ul>
+				<li><code>&ltdiv class="level_2"&gt</code></li>
+			</ul>
+        	<li><code>&ltdiv class="level_1"&gt</code></li>
+        	<ul>
+       			<li><code>&ltdiv class="level_2"&gt</code></li>
+       		</ul>
+       	</ul>
+
+        <p>The DOMs different elements have a family based relationship, in that they each have a parent and can have children or siblings and this can clearly been seen on the interactive DOM hierarchy (invoke via main menu). With jQuery you don’t have to directly reference an element via class or ID to select it, you can traverse the DOM up/down/left and right using:</p>
+
         <ul>
             <li><code>.parent()</code> - goes up</li>
             <li><code>.children()</code> - goes down</li>
             <li><code>.next()</code> - goes left to right on siblings</li>
             <li><code>.previous()</code> - goes right to left on siblings</li>
         </ul>
-        What is a viewed as a parent, child or sibling is context specific depending on the element selected, and this maybe difficult to conceptualise
+        <p>What is a viewed as a parent, child or sibling is context specific depending on the element selected, and this maybe difficult to conceptualise which is why the interactive DOM Hierarchy can be useful.</p>
     </div>
-    <div id="trying-DOM" class="container-fluid">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#dom-modal">DOM Modal</button>
-        <!-- Modal -->
+    
+        <!-- DOM Modal -->    
         <div id="dom-modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
