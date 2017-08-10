@@ -195,7 +195,7 @@
 
 		#window-tag{
 			position: absolute;
-			top: 9em;
+			top: 8.5em;
 			left: 20em;
 		}
 
@@ -214,7 +214,7 @@
 		#head-tag{
 			position: absolute;
 			left: -16.5em;
-			top: 3.25em;
+			top: 2.5em;
 		}
 
 		#meta-tag{
@@ -238,7 +238,7 @@
 		#body-tag{
 			position: absolute;
 			left: 11.5em;
-			top: 3.25em;
+			top: 2.5em;
 		}
 
 		#div1-tag{
@@ -362,7 +362,9 @@
         padding-top: 50px;
         height: 700px;
         color: #fff;
-		background: #0494ed url('../img/jQuery_icon2.png') no-repeat center center fixed; 
+        background-image: url('../img/jQuery_icon2.png') no-repeat center center fixed;
+        background-color: #0494ed;
+
     }
 
     #intro-jQuery {
