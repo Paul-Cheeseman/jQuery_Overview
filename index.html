@@ -57,7 +57,7 @@
         <h4>How do you obtain jQuery?</h4>
         <p>You can download a jQuery library to your local machine or you can use a content delivery network (CDN) which remotely hosts the library and it can be downloaded from there at run time. Whichever method you choose you will need to provide a link to the library in your HML page.</p>
         <h4>What jQuery is not</h4>
-        <p>It is important to be clear on the distinction between the jQuery library and your own jQuery file which will contain your page/site specific jQuery code. While both will need to be included (linked to) within the page, use will use functions from the jQuery library to help create your own site specific jQuery code.</p>
+        <p>It is important to be clear on the distinction between the jQuery library and your own jQuery file which will contain your page/site specific jQuery code. While both will need to be included (linked to) within the page, you will use functions from the jQuery library to help create your own site specific jQuery code.</p>
         <h4>How to implement jQuery in your HTML page</h4>
         <p>Once you have your link to a jQuery library it is worth knowing that its best practice to put the reference to the jQuery local file or CDN at the end of the body section so that the user interface aspects of the page can download before the jQuery library.</p>
         <p>Additionally, when you are using a jQuery library, you need to ensure two things. First, your own jQuery script file is loaded after the jQuery library in the HTML file, otherwise any code in your jQuery file which tries to run before the library has downloaded will fail. Second, the document object model (DOM) has loaded before the script. This is essential if your script interacts with DOM elements, as they may not have loaded by the time the script becomes active. To achieve this you can either put the script link in the head your HTML page and use the document.ready() function at the top of your jQuery script file to encapsulate the scripts within it, or put your script file link at the bottom of the body section.</p>
@@ -266,7 +266,7 @@
                     <h2 class="modal-title .text-center">Introduction to the DOM</h2>
                 </div>
                 <div class="modal-body">
-                    <p> What is a viewed as a parent, child or sibling when navigating the DOM is context specific depending on the element selected.To illustrate this an interactive diagram of a fictitious webpage has been created using jQuery. Click on any element (with the exception of Window, as it has no parent) and the diagram will show the active elements, parent, sibling and direct children.
+                    <p> What is a viewed as a parent, child or sibling when navigating the DOM is context specific depending on the element selected. To illustrate this an interactive diagram of a fictitious webpage has been created using jQuery. Click on any element (with the exception of Window, as it has no parent) and the diagram will show the active elements, parent, sibling and direct children.
                     </p>
                     <div class="dom-dashboard hideDOMNav">
                         <div class="dom-container">
