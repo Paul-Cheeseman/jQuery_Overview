@@ -59,7 +59,7 @@ if ($(window).width() < 720){
     $(".interactive-elements").remove();
     //Removing the img for reason given!
     $("figcaption").remove();    
-    $("img").replaceWith("<em>IMG's removed from mobile view because associated interactive are disabled a small mobile devices</em>");
+    $(".screen-setup-img").replaceWith("<em>IMG's removed from mobile view because associated interactive are disabled a small mobile devices</em>");
 
     window.alert("Due to the small device size the interactive elements have been removed to prevent poor user experience.");
 }
